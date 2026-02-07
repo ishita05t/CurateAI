@@ -8,3 +8,4 @@ feedparser
 psycopg2-binary
 markdown
 youtube-transcript-api
+html-to-markdown
