@@ -18,5 +18,7 @@ RUN uv pip install --system -r pyproject.toml
 
 COPY . .
 
-CMD ["uv", "run", "main.py"]
+EXPOSE 10000
+CMD ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "10000"]
+
 
