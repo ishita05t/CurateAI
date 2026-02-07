@@ -5,3 +5,6 @@ sqlalchemy
 python-dotenv
 requests
 feedparser
+psycopg2-binary
+markdown
+youtube-transcript-api
