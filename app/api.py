@@ -1,13 +1,13 @@
 from fastapi import FastAPI
 from app.daily_runner import run_daily_pipeline
 
-app = FastAPI(title="AI News Aggregator")
+app = FastAPI(title="CurateAI API")
 
 @app.get("/")
 def root():
-    return {"status": "AI News Aggregator is running"}
+    return {"status": "CurateAI is running"}
 
-@app.get("/run")
+@app.post("/run")
 def run_pipeline():
     run_daily_pipeline()
     return {"status": "Pipeline executed successfully"}
